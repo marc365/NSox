@@ -52,7 +52,7 @@ Options:
             -c                          channels, 1 or 2
             -r                          hz rate, 4000 - 192000
             -br                         kbit/s bitrate, 8 to 320 for mp3 or 48000, 56000, 64000 for G722
-            -t                          timed output for files to govern the speed over to the correct rate over stdin
+            -t                          timed output for files to govern the playback speed to the correct rate through the stdin output
             -ms                         (-rec)audio record milliseconds, 10 - 3000
             --buffer                    (-play)block encode buffer size 256 - 16384 * 4
             -l                          loop play the file
