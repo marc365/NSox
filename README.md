@@ -29,7 +29,7 @@ this is an example of how you would run NSox as a process from your own C# appli
     ChannelInfo.RedirectStandardError = true;
     ChannelProcess.StartInfo = ChannelInfo;  
     ChannelProcess.Start ();
-    while (totalbytes > 0 && !ChannelProcess.HasExited && clientSocket.Connected) 
+     while (totalbytes > 0 && !ChannelProcess.HasExited && clientSocket.Connected) 
     {
 	totalbytes = ChannelProcess.StandardOutput.BaseStream.Read (buffer, 0, buffer.Length);
 	//...
@@ -69,7 +69,7 @@ More Examples:
      NSox -rec -mp3 -c 2 -b 16 -r 44100 -br 128 | >> <app>
      NSox -rec -g722 -br 48000 | NSox -play -g722 -br 48000 (voip test)
      NSox -pink | >> (sound test)
-     NSox loop.wav -l -t | NSox -play
+     NSox loop.wav -l -t | NSox -play (loop player)
      
      NSox music.mp3 -t | NSox -convert -mp3 -c 2 -b 16 -r 22050 -br 32 | >> <network>
  
