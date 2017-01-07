@@ -6,7 +6,7 @@ This has a cut down version of the NAudio library by Mark Heath (https://github.
     this will record an mp3 of what is playing in the background:
       NSox -mixer -mp3 -c 2 -b 16 -r 44100 -br 128 > recording.mp3
  
-    this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so playing the input to the ouput
+    this will record and stream its output through the pipe | symbol using the default settings and piping it into another copy of NSox, which is set to play - so playing the input to the ouput
       NSox.exe -rec | NSox.exe -play   
     
     it will play .wav .aif .aiff .mp3 files to stdout, which can also be piped, using the -t option will regulate the output to the correct timing, or it transfers at file copy speed.
