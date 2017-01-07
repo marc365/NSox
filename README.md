@@ -8,7 +8,7 @@ This has an embedded cut down version of the NAudio library by Mark Heath (https
 M    this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so playing the input to the ouput
      NSox.exe -rec | NSox.exe -play   
     
-    it will play .wav .aif .aiff .mp3 files to stdout, which can also be piped, using the -t option will regulate the output to the correct timing, or it transfers at file copy speed.
+|    it will play .wav .aif .aiff .mp3 files to stdout, which can also be piped, using the -t option will regulate the output to the correct timing, or it transfers at file copy speed.
     NSox <filename>
 
 this is an example of how you would run NSox as a process from your own C# application and pipe the output over a network:
@@ -18,7 +18,7 @@ this is an example of how you would run NSox as a process from your own C# appli
     string mode;     //System.Net.Sockets.Socket clientSocket; etc.
     //...
     //network socket start
-    //...
+     //...
     System.Diagnostics.Process ChannelProcess = new System.Diagnostics.Process ();
     System.Diagnostics.ProcessStartInfo ChannelInfo = new System.Diagnostics.ProcessStartInfo ();
     ChannelInfo.FileName = "nsox";
@@ -65,16 +65,13 @@ Options:
 
 More Examples:
 
-
-     NSox -rec | NSox -play (this will record and stream through stdout, then pipe it into stdin and play)
-     NSox help
      mono NSox.exe help (under linux)
      NSox -mixer | NSox -play -c 2 -b 32 -r 44100
      NSox -rec -mp3 -c 2 -b 16 -r 44100 -br 128 > recording.mp3
      NSox -rec -g722 | NSox -play -g722
      NSox -pink
      
-     NSox -convert -mp3 -c 2 -b 16 -r 44100
+     | NSox -convert -mp3 -c 2 -b 16 -r 44100 |
  
 Notes:
  
