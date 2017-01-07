@@ -1,3 +1,4 @@
+
 Project Description:
 This has an embedded cut down version of the NAudio library by Mark Heath (https://github.com/naudio/NAudio) and is a command line console app that has audio streams connected to the stdin and stdout, and through processes to convert and encode. It is designed to give output to other programs, or take input from other programs (running as a background process). It can be used for streaming audio over networks and recording to disk. The '-mixer' option gives you all the audio being played by your machine, so a live broadcast encoded into mp3 directly from your desktop, mixing everything including any microphone inputs, is possible.
 
