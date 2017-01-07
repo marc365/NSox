@@ -50,9 +50,9 @@ Options:
             -mp3                        apply mp3 codec
             -b                          bits, 8, 16 or 32
             -c                          channels, 1 or 2
-            -r                          hz rate, 4000 - 48000
-            -br                         kbit/s bitrate, 8 - 320 or 48000, 56000, 64000
-            -t                          timed output for files
+            -r                          hz rate, 4000 - 192000
+            -br                         kbit/s bitrate, 8 to 320 for mp3 or 48000, 56000, 64000 for G722
+            -t                          timed output for files to govern the speed over to the correct rate over stdin
             -ms                         (-rec)audio record milliseconds, 10 - 3000
             --buffer                    (-play)block encode buffer size 256 - 16384 * 4
             -l                          loop play the file
