@@ -46,7 +46,7 @@ Command Line Usage:
             NSox -play                  play from stdin
             NSox -convert               convert from stdin
             NSox <filename>             play .wav .aif .aiff .mp3 file to stdout
-            NSox -tone                  play a sin wave
+            NSox -tone                  play a sine wave
             NSox -pink                  play pink noise
 	    
 Options:
