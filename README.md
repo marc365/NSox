@@ -5,10 +5,10 @@ This has an embedded cut down version of the NAudio library by Mark Heath (https
     this will record an mp3 of what is playing in the background:
     NSox -mixer -mp3 -c 2 -b 16 -r 44100 -br 128 > recording.mp3
  
-M    this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so playing the input to the ouput
+    this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so playing the input to the ouput
      NSox.exe -rec | NSox.exe -play   
     
-|    it will play .wav .aif .aiff .mp3 files to stdout, which can also be piped, using the -t option will regulate the output to the correct timing, or it transfers at file copy speed.
+    it will play .wav .aif .aiff .mp3 files to stdout, which can also be piped, using the -t option will regulate the output to the correct timing, or it transfers at file copy speed.
     NSox <filename>
 
 this is an example of how you would run NSox as a process from your own C# application and pipe the output over a network:
