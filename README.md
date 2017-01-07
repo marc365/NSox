@@ -5,8 +5,8 @@ This has an embedded cut down version of the NAudio library by Mark Heath (https
     this will record an mp3 of what is playing in the background:
     NSox -mixer -mp3 -c 2 -b 16 -r 44100 -br 128 > recording.mp3
  
-    this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so playing the input to the ouput
-    NSox.exe -rec | NSox.exe -play   
+M    this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so playing the input to the ouput
+     NSox.exe -rec | NSox.exe -play   
     
     it will play .wav .aif .aiff .mp3 files to stdout, which can also be piped, using the -t option will regulate the output to the correct timing, or it transfers at file copy speed.
     NSox <filename>
@@ -15,8 +15,7 @@ this is an example of how you would run NSox as a process from your own C# appli
  
     byte[] buffer = new byte[812];
     int totalbytes;
-    string mode;
-    //System.Net.Sockets.Socket clientSocket; etc.
+    string mode;     //System.Net.Sockets.Socket clientSocket; etc.
     //...
     //network socket start
     //...
@@ -26,7 +25,7 @@ this is an example of how you would run NSox as a process from your own C# appli
     ChannelInfo.Arguments = string.Format ("{0} -c 2 -b 32 -r 192000", mode);
     //or ChannelInfo.Arguments = string.Format("{0} -c 1 -r 22050 -br 64 -mp3", mode);
     ChannelInfo.UseShellExecute = false;
-    ChannelInfo.RedirectStandardInput = true;
+     ChannelInfo.RedirectStandardInput = true;
     ChannelInfo.RedirectStandardOutput = true;
     ChannelInfo.RedirectStandardError = true;
     ChannelProcess.StartInfo = ChannelInfo;  
@@ -38,7 +37,6 @@ this is an example of how you would run NSox as a process from your own C# appli
 	//build packet from 'buffer' and send tcp/udp
 	//...
 	
-
 Command Line Usage:
 
             NSox -help (-h)             show this text
@@ -63,7 +61,11 @@ Options:
             --buffer                    (-play)block encode buffer size 256 - 16384 * 4
             -l                          loop play the file
             -f                          frequency for the tone generator 1 - 20000
-	    
+
+
+More Examples:
+
+
      NSox -rec | NSox -play (this will record and stream through stdout, then pipe it into stdin and play)
      NSox help
      mono NSox.exe help (under linux)
@@ -76,9 +78,9 @@ Options:
  
 Notes:
  
- MP3, G722 encoding, conversion etc.
- sox 'like' command-line
- partial functionality under mono in linux e.g.
+     MP3, G722 encoding, conversion etc.
+     sox 'like' command-line
+     partial functionality under mono in linux e.g.
  
      arecord -q -D hw -c 2 -f S16_LE -r 44100 | sox -q --buffer 17 -c 2 -b 16 -r 44100 -e signed -t raw - -c 1 -r 4000 -t raw - | mono NSox.exe -convert -g722 -br 48000
 
