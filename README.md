@@ -3,7 +3,7 @@ Project Description:
 This has an embedded cut down version of the NAudio library by Mark Heath (https://github.com/naudio/NAudio) and is a command line console app that has it's audio streams connected to the stdin and stdout, and through processes to convert and encode. It is designed to give output to other programs, or take input from other programs (running as a background process). It can be used for streaming audio over networks and recording to disk. The '-mixer' option gives you all the audio being played by your machine, so a live broadcast encoded into mp3 directly from your desktop, mixing everything including any microphone inputs, is possible.
 
     this will record an mp3 of what is playing in the background:
-    NSox -mixer -c 2 -b 16 -r 44100 -br 128 > recording.mp3
+    NSox -mixer -mp3 -c 2 -b 16 -r 44100 -br 128 > recording.mp3
  
     this will record and stream it's output through the pipe | symbol, then pipes it into another copy of NSox which is set to play - so     playing the input to the ouput
     NSox.exe -rec | NSox.exe -play   
