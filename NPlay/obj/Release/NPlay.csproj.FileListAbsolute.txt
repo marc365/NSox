@@ -1,4 +1,0 @@
-C:\Users\User\Desktop\NSox\NSox2\bin\Release\NPlay.exe
-C:\Users\User\Desktop\NSox\NPlay\obj\Release\NPlay.exe
-C:\Users\User\Desktop\NSox\NPlay\obj\Release\NPlay.csprojResolveAssemblyReference.cache
-C:\Users\User\Desktop\NSox\bin\Release\NPlay.exe

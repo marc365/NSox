@@ -1,4 +1,0 @@
-C:\Users\User\Desktop\NSox\Constants\bin\Debug\Constants.dll
-C:\Users\User\Desktop\NSox\Constants\bin\Debug\Constants.pdb
-C:\Users\User\Desktop\NSox\Constants\obj\Debug\Constants.dll
-C:\Users\User\Desktop\NSox\Constants\obj\Debug\Constants.pdb

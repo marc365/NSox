@@ -1,7 +1,0 @@
-C:\Users\User\Desktop\NSox\NSox2\bin\Debug\NPlay.exe
-C:\Users\User\Desktop\NSox\NSox2\bin\Debug\NPlay.pdb
-C:\Users\User\Desktop\NSox\NPlay\obj\Debug\NPlay.csprojResolveAssemblyReference.cache
-C:\Users\User\Desktop\NSox\NPlay\obj\Debug\NPlay.exe
-C:\Users\User\Desktop\NSox\NPlay\obj\Debug\NPlay.pdb
-C:\Users\User\Desktop\NSox\bin\Debug\NPlay.exe
-C:\Users\User\Desktop\NSox\bin\Debug\NPlay.pdb
