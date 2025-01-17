@@ -1,9 +1,0 @@
-C:\Working Projects\NSox\bin\Debug\NSox.exe.config
-C:\Working Projects\NSox\bin\Debug\LibFlac.dll
-C:\Working Projects\NSox\bin\Debug\libmp3lame.dll
-C:\Working Projects\NSox\bin\Debug\NAudio.XML
-C:\Working Projects\NSox\bin\Debug\NSox.exe
-C:\Working Projects\NSox\bin\Debug\NSox.pdb
-C:\Working Projects\NSox\obj\Debug\NSox.csprojResolveAssemblyReference.cache
-C:\Working Projects\NSox\obj\Debug\NSox.exe
-C:\Working Projects\NSox\obj\Debug\NSox.pdb
