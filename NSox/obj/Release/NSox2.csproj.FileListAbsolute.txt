@@ -1,0 +1,4 @@
+C:\Users\User\Desktop\NSox\NSox2\bin\Release\NSox.exe
+C:\Users\User\Desktop\NSox\NSox2\obj\Release\NSox2.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\NSox\NSox2\obj\Release\NSox.exe
+C:\Users\User\Desktop\NSox\bin\Release\NSox.exe

@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\NSox\NSox2\bin\Debug\NSox.exe
+C:\Users\User\Desktop\NSox\NSox2\bin\Debug\NSox.pdb
+C:\Users\User\Desktop\NSox\NSox2\obj\Debug\NSox2.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\NSox\NSox2\obj\Debug\NSox.exe
+C:\Users\User\Desktop\NSox\NSox2\obj\Debug\NSox.pdb
+C:\Users\User\Desktop\NSox\bin\Debug\NSox.exe
+C:\Users\User\Desktop\NSox\bin\Debug\NSox.pdb

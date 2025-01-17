@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{14B5D70A-DB2D-4FA8-A934-CDBFB1C0258D}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NPlay</RootNamespace>
+    <AssemblyName>NPlay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Help.cs" />
+    <Compile Include="Mode.cs" />
+    <Compile Include="NAudio\BufferedWaveProvider.cs" />
+    <Compile Include="NAudio\CircularBuffer.cs" />
+    <Compile Include="NAudio\ISampleProvider.cs" />
+    <Compile Include="NAudio\IWavePlayer.cs" />
+    <Compile Include="NAudio\IWaveProvider.cs" />
+    <Compile Include="NAudio\MmException.cs" />
+    <Compile Include="NAudio\MmResult.cs" />
+    <Compile Include="NAudio\MmTime.cs" />
+    <Compile Include="NAudio\PlaybackState.cs" />
+    <Compile Include="NAudio\SignalGenerator.cs" />
+    <Compile Include="NAudio\StoppedEventArgs.cs" />
+    <Compile Include="NAudio\WaveCallbackInfo.cs" />
+    <Compile Include="NAudio\WaveCallbackStrategy.cs" />
+    <Compile Include="NAudio\WaveFormat.cs" />
+    <Compile Include="NAudio\WaveFormatEncoding.cs" />
+    <Compile Include="NAudio\WaveHeader.cs" />
+    <Compile Include="NAudio\WaveHeaderFlags.cs" />
+    <Compile Include="NAudio\WaveInterop.cs" />
+    <Compile Include="NAudio\WaveOut.cs" />
+    <Compile Include="NAudio\WaveOutBuffer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{21425a06-e7e3-4b19-9b00-d084c6fbf99e}</Project>
+      <Name>Constants</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

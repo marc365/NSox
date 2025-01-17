@@ -1,0 +1,4 @@
+C:\Users\User\Desktop\NSox\Constants\bin\Release\Constants.dll
+C:\Users\User\Desktop\NSox\Constants\bin\Release\Constants.pdb
+C:\Users\User\Desktop\NSox\Constants\obj\Release\Constants.dll
+C:\Users\User\Desktop\NSox\Constants\obj\Release\Constants.pdb

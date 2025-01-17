@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F726FFED-F765-4DF6-888E-92A5CDC6F69A}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NSox2</RootNamespace>
+    <AssemblyName>NSox</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineConstants />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>..\bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Help.cs" />
+    <Compile Include="Mode.cs" />
+    <Compile Include="NAudio\AudioMediaSubtypes.cs" />
+    <Compile Include="NAudio\BufferedWaveProvider.cs" />
+    <Compile Include="NAudio\CircularBuffer.cs" />
+    <Compile Include="CoreAudioApi\AudioCaptureClient.cs" />
+    <Compile Include="CoreAudioApi\AudioClient.cs" />
+    <Compile Include="CoreAudioApi\AudioClientBufferFlags.cs" />
+    <Compile Include="CoreAudioApi\AudioClientSharedMode.cs" />
+    <Compile Include="CoreAudioApi\AudioClientStreamFlags.cs" />
+    <Compile Include="CoreAudioApi\AudioClockClient.cs" />
+    <Compile Include="CoreAudioApi\AudioEndPointVolume.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeCallback.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeChannel.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeChannels.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeNotificationDelegate.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeStepInformation.cs" />
+    <Compile Include="CoreAudioApi\AudioEndpointVolumeVolumeRange.cs" />
+    <Compile Include="CoreAudioApi\AudioMeterInformation.cs" />
+    <Compile Include="CoreAudioApi\AudioMeterInformationChannels.cs" />
+    <Compile Include="CoreAudioApi\AudioRenderClient.cs" />
+    <Compile Include="CoreAudioApi\AudioVolumeNotificationData.cs" />
+    <Compile Include="CoreAudioApi\AudioVolumeNotificationDataStruct.cs" />
+    <Compile Include="CoreAudioApi\Blob.cs" />
+    <Compile Include="CoreAudioApi\ClsCtx.cs" />
+    <Compile Include="CoreAudioApi\DataFlow.cs" />
+    <Compile Include="CoreAudioApi\DeviceState.cs" />
+    <Compile Include="CoreAudioApi\EEndpointHardwareSupport.cs" />
+    <Compile Include="CoreAudioApi\ErrorCodes.cs" />
+    <Compile Include="CoreAudioApi\IAudioCaptureClient.cs" />
+    <Compile Include="CoreAudioApi\IAudioClient.cs" />
+    <Compile Include="CoreAudioApi\IAudioClock.cs" />
+    <Compile Include="CoreAudioApi\IAudioEndpointVolume.cs" />
+    <Compile Include="CoreAudioApi\IAudioEndpointVolumeCallback.cs" />
+    <Compile Include="CoreAudioApi\IAudioMeterInformation.cs" />
+    <Compile Include="CoreAudioApi\IAudioRenderClient.cs" />
+    <Compile Include="CoreAudioApi\IMMDevice.cs" />
+    <Compile Include="CoreAudioApi\IMMDeviceCollection.cs" />
+    <Compile Include="CoreAudioApi\IMMDeviceEnumerator.cs" />
+    <Compile Include="CoreAudioApi\IMMEndpoint.cs" />
+    <Compile Include="CoreAudioApi\IMMNotificationClient.cs" />
+    <Compile Include="CoreAudioApi\IPropertyStore.cs" />
+    <Compile Include="CoreAudioApi\MMDevice.cs" />
+    <Compile Include="CoreAudioApi\MMDeviceCollection.cs" />
+    <Compile Include="CoreAudioApi\MMDeviceEnumerator.cs" />
+    <Compile Include="CoreAudioApi\MMDeviceEnumeratorComObject.cs" />
+    <Compile Include="CoreAudioApi\PropertyKey.cs" />
+    <Compile Include="CoreAudioApi\PropertyKeys.cs" />
+    <Compile Include="CoreAudioApi\PropertyStore.cs" />
+    <Compile Include="CoreAudioApi\PropertyStoreProperty.cs" />
+    <Compile Include="CoreAudioApi\PropVariant.cs" />
+    <Compile Include="CoreAudioApi\Role.cs" />
+    <Compile Include="CoreAudioApi\StorageAccessMode.cs" />
+    <Compile Include="NAudio\HResult.cs" />
+    <Compile Include="NAudio\IWaveBuffer.cs" />
+    <Compile Include="NAudio\WasapiCapture.cs" />
+    <Compile Include="NAudio\ISampleProvider.cs" />
+    <Compile Include="NAudio\IWaveIn.cs" />
+    <Compile Include="NAudio\IWavePlayer.cs" />
+    <Compile Include="NAudio\IWaveProvider.cs" />
+    <Compile Include="NAudio\MmException.cs" />
+    <Compile Include="NAudio\MmResult.cs" />
+    <Compile Include="NAudio\MmTime.cs" />
+    <Compile Include="NAudio\PlaybackState.cs" />
+    <Compile Include="NAudio\SignalGenerator.cs" />
+    <Compile Include="NAudio\StoppedEventArgs.cs" />
+    <Compile Include="NAudio\WasapiLoopbackCapture.cs" />
+    <Compile Include="NAudio\WaveBuffer.cs" />
+    <Compile Include="NAudio\WaveCallbackInfo.cs" />
+    <Compile Include="NAudio\WaveCallbackStrategy.cs" />
+    <Compile Include="NAudio\WaveFormat.cs" />
+    <Compile Include="NAudio\WaveFormatEncoding.cs" />
+    <Compile Include="NAudio\WaveFormatExtensible.cs" />
+    <Compile Include="NAudio\WaveFormatExtraData.cs" />
+    <Compile Include="NAudio\WaveHeader.cs" />
+    <Compile Include="NAudio\WaveHeaderFlags.cs" />
+    <Compile Include="NAudio\WaveIn.cs" />
+    <Compile Include="NAudio\WaveInBuffer.cs" />
+    <Compile Include="NAudio\WaveInCapabilities.cs" />
+    <Compile Include="NAudio\WaveInEvent.cs" />
+    <Compile Include="NAudio\WaveInEventArgs.cs" />
+    <Compile Include="NAudio\WaveInterop.cs" />
+    <Compile Include="NAudio\WaveOut.cs" />
+    <Compile Include="NAudio\WaveOutBuffer.cs" />
+    <Compile Include="NAudio\WaveOutCapabilities.cs" />
+    <Compile Include="NAudio\WaveOutSupport.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{21425a06-e7e3-4b19-9b00-d084c6fbf99e}</Project>
+      <Name>Constants</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
